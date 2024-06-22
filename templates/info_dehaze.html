@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dehaze Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .section {
+            padding: 30px 0;
+        }
+        .section .text-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .btn-dehaze {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .description {
+            text-align: center;
+            font-size: 1.1em;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Section 1 -->
+        <div class="row section">
+            <div class="col-lg-8 col-md-12 text-content">
+                <h2>Dehaze Photo Online Free</h2>
+                <p>Free to dehaze photos to rescue your foggy or cloudy photos with the AI dehaze tool. Suitable for all, including beginners, to remove haze from photos!</p>
+                <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-dehaze">Dehaze Photos Now</a>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <img src="{{ url_for('static', filename='img/sample_dehazed.jpg') }}" alt="Sample Dehazed Image">
+            </div>
+        </div>
+
+        <!-- Section 2 - Description -->
+        <div class="description">
+            <p>Our AI dehaze tool lets you remove haziness from foggy pictures within a few seconds. It also handles images with haze photo effects and filters manually because our AI will automatically remove haze filters for you. From outdoor cloudy pictures to hazy photography, it fixes them all magically!</p>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="row section">
+            <div class="col-lg-4 col-md-12 order-lg-2">
+                <img src="{{ url_for('static', filename='img/sample_dehazed.jpg') }}" alt="AI Dehaze Tool">
+            </div>
+            <div class="col-lg-8 col-md-12 text-content order-lg-1">
+                <h2>Easy-to-use AI Dehaze Tool</h2>
+                <p>Our AI dehaze tool is super easy for everyone to use. Just upload your hazy photos to our haze removal tool, and our AI will automatically remove haziness or haze filters for you. The whole process takes less than three seconds and requires no manual operations!</p>
+                <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-dehaze">Dehaze Photos Now</a>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="row section">
+            <div class="col-lg-8 col-md-12 text-content">
+                <h2>Automatically Dehaze Photos for Clear Photo Effects</h2>
+                <p>Get annoyed by the blurriness of your foggy photos or hazy pictures? No worries, Fotor is here to help remove blurriness from photos and enhance photo qualities with its AI dehaze photo tool. Our haze removal tool will represent the crystal clearness of your images amazingly. Switch to our AI dehaze tool in no time!</p>
+                <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-dehaze">Dehaze Photos Now</a>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <img src="{{ url_for('static', filename='img/clear_effect.png') }}" alt="Clear Photo Effects">
+            </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="row section">
+            <div class="col-lg-4 col-md-12 order-lg-2">
+                <img src="{{ url_for('static', filename='img/sky_color.png') }}" alt="Sky Color Correction">
+            </div>
+            <div class="col-lg-8 col-md-12 text-content order-lg-1">
+                <h2>Dehaze Image for Sky Color Correction</h2>
+                <p>Haziness is sometimes the photo bomber on your outdoor images. It may ruin the photo color and cause blurriness. AI photo dehaze tool has the capability to magically restore the beauty of your landscapes that were once ruined by fog, mist, dust, and rain. You can correct sky photo color instead of replacing sky, as our dehaze tool will automatically remove haze and bring back full colors!</p>
+                <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-dehaze">Dehaze Photos Now</a>
+            </div>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="row section">
+            <div class="col-lg-8 col-md-12 text-content">
+                <h2>How to Dehaze Photo with AI?</h2>
+                <ol>
+                    <li>Click the “Dehaze Photos Now” button to switch to our AI dehaze tool.</li>
+                    <li>Upload your foggy photos or hazy pictures and click the “Dehaze” to get started.</li>
+                    <li>Our AI tool will automatically remove haze from photos within three seconds.</li>
+                    <li>Preview and save your dehazed photos in the image format you want.</li>
+                </ol>
+                <a href="{{ url_for('upload_file') }}" class="btn btn-primary btn-dehaze">Dehaze Photos Now</a>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <img src="{{ url_for('static', filename='img/sample_dehazed.jpg') }}" alt="How to Dehaze">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

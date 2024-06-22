@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Uploads</title>
+</head>
+<body>
+    <h1>User Uploads</h1>
+    <table border="1">
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Original Image</th>
+            <th>Dehazed Image</th>
+            <th>Upload Time</th>
+        </tr>
+        {% for upload in uploads %}
+        <tr>
+            <td>{{ upload['username'] }}</td>
+            <td>{{ upload['email'] }}</td>
+            <td>{{ upload['original_path'] }}</td>
+            <td>{{ upload['dehazed_path'] }}</td>
+            <td>{{ upload['upload_time'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

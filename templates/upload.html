@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h3><b><i>Dehaze Photo Online Free</i></b></h3>
+        <img src="{{ url_for('static', filename='img/sample_dehazed.jpg') }}" alt="Dehazed Sample">
+        <h2>Upload Image</h2>
+        <form action="{{ url_for('upload_file') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Choose an image file</label>
+                <input type="file" class="form-control-file" id="file" name="file" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
